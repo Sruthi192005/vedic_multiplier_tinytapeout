@@ -48,7 +48,7 @@ module tb;
     ui_in = {4'd9, 4'd0};
     #20;
 
-    $finish;
+   
   end
 
 endmodule
