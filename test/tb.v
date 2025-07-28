@@ -5,7 +5,7 @@ module tbb;
   // Declare testbench signals
   reg clk;
   reg rst_n;
- 
+  reg ena;
   reg [3:0] a, b;
   wire [7:0] p;
 
@@ -13,7 +13,7 @@ module tbb;
   tt_um_vedic_4x4 dut (
     .clk(clk),
     .rst_n(rst_n),
-   
+    .ena(ena),
     .a(a),
     .b(b),
     .p(p)
