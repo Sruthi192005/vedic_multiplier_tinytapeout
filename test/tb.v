@@ -17,7 +17,7 @@ module tb;
   wire [7:0] uio_out;
   wire [7:0] uio_oe;
 
-  tt_um_myprocessor dut (
+  vedic_4x4 dut (
     .clk(clk),
     .rst_n(rst_n),
     .ena(ena),
