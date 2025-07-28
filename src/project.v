@@ -7,7 +7,7 @@ module tt_um_vedic_4x4 (
     output [7:0] p,
     input clk,
     input rst_n,
-    input ena,
+   
 );
 
     wire [3:0] p0, p1, p2, p3;
