@@ -7,11 +7,11 @@ project:
   clock_hz:     0
   tiles:        "1x1"
 
-  top_module:   "tt_um_myprocessor"
+  top_module:   "user_module_0"
 
   source_files:
-    - "vedic_2x2.v"
-    - "vedic_4x4.v"
+    - "project.v"
+   
 
 pinout:
   # Inputs
