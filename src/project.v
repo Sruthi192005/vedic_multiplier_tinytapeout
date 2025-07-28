@@ -64,3 +64,14 @@ module vedic_2x2 (
     assign p[3] = carry2;
 
 endmodule
+
+//Half adder
+module half_adder (
+    input a,
+    input b,
+    output sum,
+    output carry
+);
+    assign sum = a ^ b;
+    assign carry = a & b;
+endmodule
