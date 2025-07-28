@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tb;
+module tbb;
 
   initial begin
     $dumpfile("tb.vcd");
@@ -17,7 +17,7 @@ module tb;
   wire [7:0] uio_out;
   wire [7:0] uio_oe;
 
-  vedic_4x4 dut (
+  tt_um_vedic_4x4 dut (
     .clk(clk),
     .rst_n(rst_n),
     .ena(ena),
