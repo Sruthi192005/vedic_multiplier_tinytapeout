@@ -5,7 +5,7 @@ module tt_um_vedic_4x4 (
     output [7:0] uio_out,
     output [7:0] uio_oe,
     input        clk,
-    input        rst_n
+    input        rst_n,
 );
     wire [3:0] a = ui_in[3:0];
     wire [3:0] b = ui_in[7:4];
