@@ -1,23 +1,4 @@
-module user_module_0 (
-    input  [7:0] io_in,   // 8-bit input: [7:4] = a, [3:0] = b
-    output [7:0] io_out   // 8-bit output (lower 8 bits of product)
-);
 
-    wire [3:0] a, b;
-    wire [7:0] result;
-
-    assign a = io_in[7:4];
-    assign b = io_in[3:0];
-
-    vedic_4x4 multiplier (
-        .a(a),
-        .b(b),
-        .p(result)
-    );
-
-    assign io_out = result;
-
-endmodule
 
 //4*4 vedic multiplier
 module vedic_4x4 (
