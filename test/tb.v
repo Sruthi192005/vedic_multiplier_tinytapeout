@@ -26,8 +26,7 @@ module tb;
   always #5 clk = ~clk;
 
   initial begin
-    $dumpfile("tb.vcd");
-    $dumpvars(0, tb);
+   
 
     clk = 0;
     ena = 1;
