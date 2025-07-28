@@ -1,15 +1,24 @@
+// SPDX-License-Identifier: Apache-2.0
+// 4x4 Vedic Multiplier - Tiny Tapeout Compatible
 
-
-//4*4 vedic multiplier
 module tt_um_vedic_4x4 (
-    input  [3:0] a,
-    input  [3:0] b,
-    output [7:0] p,
-    input clk,
-    input rst_n,
-    input ena
-   
+    input  wire [7:0] ui_in,     // A[3:0], B[3:0]
+    output wire [7:0] uo_out,    // Product P[7:0]
+    input  wire [7:0] uio_in,
+    output wire [7:0] uio_out,
+    output wire [7:0] uio_oe,
+    input  wire clk,
+    input  wire rst_n,
+    input  wire ena
 );
+
+    wire [3:0] a = ui_in[3:0];  // A[3:0]
+    wire [3:0] b = ui_in[7:4];  // B[3:0]
+    wire [7:0] p;
+
+    assign uo_out = p;
+    assign uio_out = 8'b0;
+    assign uio_oe  = 8'b0;
 
     wire [3:0] p0, p1, p2, p3;
     wire [7:0] sum1, sum2;
@@ -25,7 +34,7 @@ module tt_um_vedic_4x4 (
 
 endmodule
 
-//2*2 vedic multiplier
+
 module vedic_2x2 (
     input  [1:0] a,
     input  [1:0] b,
@@ -48,15 +57,4 @@ module vedic_2x2 (
     assign p[2] = sum2;
     assign p[3] = carry2;
 
-endmodule
-
-//Half adder
-module half_adder (
-    input a,
-    input b,
-    output sum,
-    output carry
-);
-    assign sum = a ^ b;
-    assign carry = a & b;
 endmodule
