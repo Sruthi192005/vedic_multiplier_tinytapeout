@@ -12,7 +12,7 @@ module tb;
   wire [7:0] uio_out;
   wire [7:0] uio_oe;
 
-  tt_um_vedic_4x4 dut (
+  tt_um_vedic_8x8 dut (
     .clk(clk),
     .rst_n(rst_n),
     .ena(ena),
