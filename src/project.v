@@ -12,8 +12,7 @@ module tt_um_vedic_4x4 (
 
     assign uio_out = 8'b0;
     assign uio_oe  = 8'b0;
-    assign irq     = 8'b0;
-
+  
     wire [3:0] a = ui_in[3:0];
     wire [3:0] b = ui_in[7:4];
     wire [7:0] r;
