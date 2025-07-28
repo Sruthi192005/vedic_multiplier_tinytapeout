@@ -1,30 +1,47 @@
+# Tiny Tapeout project information
 project:
-  title: "8x8 Vedic Multiplier"
-  author: "Rekhana Sruthi"
-  description: "A 4x4-bit Vedic multiplier designed for Tiny Tapeout. Uses Urdhva Tiryagbhyam method for fast arithmetic operations."
-  language: "verilog"
-  top_module: "user_module_0"
-  github: "https://github.com/Sruthi192005/vedic_multiplier_tinytapeout"
+  title:        "4x4 Vedic Multiplier"
+  author:       "Rekhana Sruthi"
+  description:  "Implements a 4-bit by 4-bit Vedic multiplier using hierarchical Urdhva Tiryagbhyam logic."
+  language:     "Verilog"
+  clock_hz:     0
+  tiles:        "1x1"
 
-  # Leave these as default unless you’re using them
-  inputs:
-    - io_in[0]
-    - io_in[1]
-    - io_in[2]
-    - io_in[3]
-    - io_in[4]
-    - io_in[5]
-    - io_in[6]
-    - io_in[7]
+  top_module:   "tt_um_myprocessor"
 
-  outputs:
-    - io_out[0]
-    - io_out[1]
-    - io_out[2]
-    - io_out[3]
-    - io_out[4]
-    - io_out[5]
-    - io_out[6]
-    - io_out[7]
+  source_files:
+    - "vedic_2x2.v"
+    - "vedic_4x4.v"
 
-  tags: ["vedic", "multiplier", "arithmetic", "digital-design", "tiny-tapeout"]
+pinout:
+  # Inputs
+  ui[0]: "A[0]"
+  ui[1]: "A[1]"
+  ui[2]: "A[2]"
+  ui[3]: "A[3]"
+  ui[4]: "B[0]"
+  ui[5]: "B[1]"
+  ui[6]: "B[2]"
+  ui[7]: "B[3]"
+
+  # Outputs
+  uo[0]: "P[0]"
+  uo[1]: "P[1]"
+  uo[2]: "P[2]"
+  uo[3]: "P[3]"
+  uo[4]: "P[4]"
+  uo[5]: "P[5]"
+  uo[6]: "P[6]"
+  uo[7]: "P[7]"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
