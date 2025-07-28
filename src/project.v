@@ -1,7 +1,7 @@
 
 
 //4*4 vedic multiplier
-module vedic_4x4 (
+module tt_um_vedic_4x4 (
     input  [3:0] a,
     input  [3:0] b,
     output [7:0] p
