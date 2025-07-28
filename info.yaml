@@ -6,12 +6,10 @@ project:
   language:     "Verilog"
   clock_hz:     0
   tiles:        "1x1"
-
   top_module:   "tt_um_vedic_4x4"
 
   source_files:
     - "project.v"
-   
 
 pinout:
   # Inputs
@@ -34,7 +32,7 @@ pinout:
   uo[6]: "P[6]"
   uo[7]: "P[7]"
 
-  # Bidirectional pins
+  # Bidirectional pins (not used)
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
