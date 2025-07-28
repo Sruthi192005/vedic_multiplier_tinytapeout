@@ -4,9 +4,9 @@
 module tt_um_vedic_4x4 (
     input  [3:0] a,
     input  [3:0] b,
-    output [7:0] p
+    output [7:0] p,
     input clk,
-    input reset
+    input rst_n
 );
 
     wire [3:0] p0, p1, p2, p3;
