@@ -52,6 +52,6 @@ pinout:
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
-
+  uio[8]: ""
 # Do not change!
 yaml_version: 6
