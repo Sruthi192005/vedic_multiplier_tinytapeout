@@ -31,7 +31,7 @@ pinout:
   ui[5]: "B1"
   ui[6]: "B2"
   ui[7]: "B3"
-  ui[8]: "ena"
+  
 
   # Outputs
   uo[0]: "P0"
@@ -52,6 +52,6 @@ pinout:
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
-  uio[8]: ""
+
 # Do not change!
 yaml_version: 6
