@@ -7,7 +7,7 @@ project:
   clock_hz:     0
   tiles:        "1x1"
 
-  top_module:   "user_module_0"
+  top_module:   "tt_um_user_module_0"
 
   source_files:
     - "project.v"
