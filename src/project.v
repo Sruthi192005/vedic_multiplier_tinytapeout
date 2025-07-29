@@ -6,7 +6,7 @@ module tt_um_vedic_4x4 (
     output [7:0] uio_oe,   // unused
     input clk,             // unused
     input rst_n,           // unused
-    input ena,             // unused
+    input ena            // unused
   
 );
 
