@@ -1,6 +1,11 @@
 `timescale 1ns / 1ps
 
 module tb;
+   initial begin
+    $dumpfile("tb.vcd");
+    $dumpvars(0, tb);
+    #1;
+  end
 
   reg        clk;
   reg        rst_n;
